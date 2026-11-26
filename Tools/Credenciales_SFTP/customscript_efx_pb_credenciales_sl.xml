@@ -1,0 +1,20 @@
+<suitelet scriptid="customscript_efx_pb_credenciales_sl">
+  <description>Suitelet auxiliar para capturar y probar credenciales SFTP (Password GUID) de forma segura.</description>
+  <isinactive>F</isinactive>
+  <name>EFX PB - Gestión Credenciales SFTP SL</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/SFTP_Protanos/EFX_PB_Credenciales_SL.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_efx_pb_credenciales_sl">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>EFX PB - Gestión Credenciales SFTP</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

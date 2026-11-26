@@ -1,0 +1,29 @@
+<transactionbodycustomfield scriptid="custbody_efx_pb_enviado_sftp">
+  <accesslevel>2</accesslevel>
+  <applyformatting>F</applyformatting>
+  <bodycustomerpayment>F</bodycustomerpayment>
+  <bodydeposit>F</bodydeposit>
+  <bodyitemfulfillment>F</bodyitemfulfillment>
+  <bodyitemfulfillmentorder>F</bodyitemfulfillmentorder>
+  <bodyitemreceipt>F</bodyitemreceipt>
+  <bodyitemreceiptorder>F</bodyitemreceiptorder>
+  <bodyjournal>F</bodyjournal>
+  <bodyopportunity>F</bodyopportunity>
+  <bodyothertransaction>F</bodyothertransaction>
+  <bodypurchase>F</bodypurchase>
+  <bodysale>T</bodysale>
+  <bodyvendorpayment>F</bodyvendorpayment>
+  <checkspelling>F</checkspelling>
+  <defaultchecked>F</defaultchecked>
+  <displaytype>LOCKED</displaytype>
+  <encryptatrest>F</encryptatrest>
+  <fieldtype>CHECKBOX</fieldtype>
+  <globalsearch>F</globalsearch>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <isparent>F</isparent>
+  <label>EFX PB - Enviado por SFTP</label>
+  <searchlevel>2</searchlevel>
+  <showinlist>T</showinlist>
+  <storevalue>T</storevalue>
+</transactionbodycustomfield>

@@ -1,0 +1,28 @@
+<customlist scriptid="customlist_efx_pb_estado_envio">
+  <description>Estados del proceso de reenvío SFTP para Protano's Bakery</description>
+  <isinactive>F</isinactive>
+  <name>EFX PB - Estados Envío SFTP</name>
+  <customvalues>
+    <customvalue scriptid="val_pendiente">
+      <isinactive>F</isinactive>
+      <value>Pendiente</value>
+    </customvalue>
+    <customvalue scriptid="val_en_proceso">
+      <isinactive>F</isinactive>
+      <value>En proceso</value>
+    </customvalue>
+    <customvalue scriptid="val_ok">
+      <isinactive>F</isinactive>
+      <value>OK</value>
+    </customvalue>
+    <customvalue scriptid="val_sin_facturas">
+      <isinactive>F</isinactive>
+      <value>Sin facturas</value>
+    </customvalue>
+    <customvalue scriptid="val_error">
+      <isinactive>F</isinactive>
+      <value>Error</value>
+    </customvalue>
+  </customvalues>
+</customlist>
+

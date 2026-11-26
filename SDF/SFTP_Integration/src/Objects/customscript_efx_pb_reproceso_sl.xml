@@ -1,0 +1,21 @@
+<suitelet scriptid="customscript_efx_pb_reproceso_sl">
+  <description>Suitelet de interfaz de usuario para reprocesar manualmente el envío de facturas por SFTP.</description>
+  <isinactive>F</isinactive>
+  <name>EFX PB - Reproceso Facturas SFTP SL</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/SFTP_Protanos/EFX_PB_ReprocesoFacturas_SL.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_efx_pb_reproceso_sl">
+      <allemployees>T</allemployees>
+      <allroles>T</allroles>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>EFX PB - Reproceso Facturas SFTP SL</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

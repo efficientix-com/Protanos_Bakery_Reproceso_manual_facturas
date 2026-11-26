@@ -1,0 +1,207 @@
+<scheduledscript scriptid="customscript_efx_pb_reproceso_ss">
+  <description>Scheduled Script para la ejecución en segundo plano del reproceso de facturas y envío SFTP.</description>
+  <isinactive>F</isinactive>
+  <name>EFX PB - Reproceso Facturas SFTP SS</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/SFTP_Protanos/EFX_PB_ReprocesoFacturas_SS.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_efx_pb_fecha">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Fecha de Reproceso</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_log_id">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>ID Registro Bitácora</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_modo">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Modo de Envío</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_customer_id">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>ID Cliente Final</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_sftp_host">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>SFTP Host</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_sftp_port">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>SFTP Puerto</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_sftp_user">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>SFTP Usuario</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_sftp_dir">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>SFTP Directorio Remoto</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_sftp_pwd_guid">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>SFTP Password GUID</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_sftp_key_id">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>SFTP Secret Key ID</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_sftp_hostkey">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>CLOBTEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>SFTP Host Key</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_sftp_hostkey_type">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>TEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>SFTP Host Key Type</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_ids">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>CLOBTEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>IDs Facturas Manuales</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_efx_pb_correos">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <fieldtype>CLOBTEXT</fieldtype>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Correos para Resumen</label>
+      <searchlevel>2</searchlevel>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_efx_pb_reproceso_ss">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>EFX PB - Reproceso Facturas SFTP SS (Manual Deploy)</title>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_efx_pb_envio_diario_ss">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>EFX PB - Envío Diario Stand-in SS</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

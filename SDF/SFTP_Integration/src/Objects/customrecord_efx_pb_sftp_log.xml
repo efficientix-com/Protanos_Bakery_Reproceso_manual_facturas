@@ -1,0 +1,264 @@
+<customrecordtype scriptid="customrecord_efx_pb_sftp_log">
+  <accesstype>NONENEEDED</accesstype>
+  <allowattachments>T</allowattachments>
+  <allowinlinedeleting>F</allowinlinedeleting>
+  <allowinlinedetaching>T</allowinlinedetaching>
+  <allowinlineediting>F</allowinlineediting>
+  <allowmobileaccess>F</allowmobileaccess>
+  <allowquickadd>F</allowquickadd>
+  <allowquicksearch>T</allowquicksearch>
+  <allowuiaccess>T</allowuiaccess>
+  <description>Bitácora de ejecuciones de reproceso de facturas por SFTP para Protano's Bakery</description>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <recordname>EFX PB - Log Envío SFTP</recordname>
+  <showcreationdate>T</showcreationdate>
+  <showcreationdateonlist>T</showcreationdateonlist>
+  <showid>T</showid>
+  <showlastmodified>T</showlastmodified>
+  <showlastmodifiedonlist>T</showlastmodifiedonlist>
+  <shownotes>T</shownotes>
+  <showowner>T</showowner>
+  <showownerallowchange>F</showownerallowchange>
+  <showowneronlist>T</showowneronlist>
+  <customrecordcustomfields>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_fecha_solicitada">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>DATE</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>Fecha Solicitada</label>
+      <searchlevel>2</searchlevel>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_cliente">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>TEXT</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>Cliente ID</label>
+      <searchlevel>2</searchlevel>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_usuario">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>SELECT</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>Usuario Ejecutor</label>
+      <onparentdelete>NO_ACTION</onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype>-4</selectrecordtype>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_inicio">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>DATETIMETZ</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>Fecha/Hora Inicio</label>
+      <searchlevel>2</searchlevel>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_fin">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>DATETIMETZ</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>Fecha/Hora Fin</label>
+      <searchlevel>2</searchlevel>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_task_id">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>TEXT</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>Task ID</label>
+      <searchlevel>2</searchlevel>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_estado">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>SELECT</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>Estado</label>
+      <onparentdelete>NO_ACTION</onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype>[scriptid=customlist_efx_pb_estado_envio]</selectrecordtype>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_num_facturas">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>INTEGER</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>Número de Facturas</label>
+      <searchlevel>2</searchlevel>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_ids_procesados">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>CLOBTEXT</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>IDs de Facturas Procesadas</label>
+      <searchlevel>2</searchlevel>
+      <showinlist>F</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_nombre_archivo">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>TEXT</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>Nombre de Archivo</label>
+      <searchlevel>2</searchlevel>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_archivo">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>DOCUMENT</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>Archivo Generado</label>
+      <searchlevel>2</searchlevel>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_modo">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>TEXT</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>Modo de Envío</label>
+      <searchlevel>2</searchlevel>
+      <showinlist>T</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+    <customrecordcustomfield scriptid="custrecord_efx_pb_log_detalle_error">
+      <accesslevel>2</accesslevel>
+      <allowquickadd>F</allowquickadd>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <displaytype>NORMAL</displaytype>
+      <encryptatrest>F</encryptatrest>
+      <fieldtype>CLOBTEXT</fieldtype>
+      <globalsearch>F</globalsearch>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <isparent>F</isparent>
+      <label>Detalle / Error</label>
+      <searchlevel>2</searchlevel>
+      <showinlist>F</showinlist>
+      <storevalue>T</storevalue>
+    </customrecordcustomfield>
+  </customrecordcustomfields>
+</customrecordtype>

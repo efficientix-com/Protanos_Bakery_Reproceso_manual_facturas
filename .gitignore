@@ -1,0 +1,26 @@
+﻿# Dependencies
+node_modules/
+package-lock.json
+
+# Local Backups & Logs
+Backup/
+*.log
+logs/
+npm-debug.log*
+
+# NetSuite / SuiteCloud local cache and config
+.suitecloud/
+.project
+.classpath
+.settings/
+build/
+project.json
+
+# IDE / Editor configuration
+.idea/
+.vscode/
+*.sublime-workspace
+
+# OS temporary files
+.DS_Store
+Thumbs.db
